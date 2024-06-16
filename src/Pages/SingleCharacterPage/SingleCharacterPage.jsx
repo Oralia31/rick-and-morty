@@ -25,7 +25,9 @@ const SingleCharacterPage = () => {
   const fetchCharacter = async (id) => {
     const data = await getSingleCharacter(id);
     setCharacter(data);
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 300);
   };
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const SingleCharacterPage = () => {
       fetchCharacter(id);
     }
   }, [id]);
- 
+
   return (
     <MainContainer>
       <ButtonBack />

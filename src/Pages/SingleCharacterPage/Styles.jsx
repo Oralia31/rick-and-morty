@@ -114,7 +114,7 @@ export const AvatarContainer = styled(Avatar)`
 
 export const EpisodeContainer = styled.div`
   width: 100%;
-  height: 36rem;
-  overflow-x: hidden;
-  overflow: scroll;
+  height: auto;
+  max-height: 36rem;
+  overflow-y: auto;
 `;
