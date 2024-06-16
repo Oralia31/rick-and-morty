@@ -7,5 +7,5 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [react()],
-  base: "https://oralia31.github.io/Oralia31.github.io",
+  base: "/Oralia31.github.io/",
 });
