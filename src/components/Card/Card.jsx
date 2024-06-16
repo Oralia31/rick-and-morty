@@ -1,10 +1,10 @@
 import React from "react";
-import { LinkContent, CardContent, Status, CardInformation } from "./Styles";
+import { LinkContent, CardContent, CardInformation } from "./Styles";
 
 const Card = ({ character }) => {
 
   return (
-    <LinkContent to={`/character/${character.id}`}>
+    <LinkContent to={`/rick-and-morty/character/${character.id}`}>
       <CardContent>
         <img src={character.image} />
         <CardInformation>

@@ -33,7 +33,7 @@ const SingleCharacterPage = () => {
       fetchCharacter(id);
     }
   }, [id]);
-  console.log(character);
+ 
   return (
     <MainContainer>
       <ButtonBack />

@@ -9,11 +9,11 @@ import FilterCharacter from "../Pages/FilterCharacter/FilterCharacter";
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Header />}>
+      <Route path="/rick-and-morty" element={<Header />}>
         <Route index element={<HomePage />} />
-        <Route path="character/:id" element={<SingleCharacterPage />}></Route>
-        <Route path="/search" element={<SearchCharacter />}></Route>
-        <Route path="/filter/:selected" element={<FilterCharacter />}></Route>
+        <Route path="/rick-and-morty/character/:id" element={<SingleCharacterPage />}></Route>
+        <Route path="/rick-and-morty/search" element={<SearchCharacter />}></Route>
+        <Route path="/rick-and-morty/filter/:selected" element={<FilterCharacter />}></Route>
       </Route>
     </Routes>
   );

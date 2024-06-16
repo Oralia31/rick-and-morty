@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+export const WrapperConatiner = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5rem 8rem;
+  row-gap: 2rem;
+
+  @media (max-width: 1279px) {
+    padding: 2rem;
+    row-gap: 1rem;
+  }
+`;
 export const MainContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -11,11 +27,10 @@ export const MainContainer = styled.div`
   column-gap: 2rem;
   row-gap: 1rem;
 
-  @media (max-width: 479px) {
+  @media (max-width: 1279px) {
     display: flex;
     flex-direction: column;
     padding: 2rem;
   }
-
- 
 `;
+

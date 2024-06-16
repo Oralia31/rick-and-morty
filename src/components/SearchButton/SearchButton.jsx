@@ -9,11 +9,11 @@ const SearchButton = () => {
 
   const handleClick = (value) => {
     if (value.length > 0) {
-      navigate("/search", {
+      navigate("/rick-and-morty/search", {
         state: value,
       });
     } else {
-      navigate("/");
+      navigate("/rick-and-morty");
     }
   };
 

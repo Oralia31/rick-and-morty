@@ -10,7 +10,7 @@ const CheckboxGroup = () => {
   const handleChange = (event) => {
     const { name } = event.target;
     setSelected(name);
-    navigate(`/filter/${name}`);
+    navigate(`/rick-and-morty/filter/${name}`);
   };
 
   return (

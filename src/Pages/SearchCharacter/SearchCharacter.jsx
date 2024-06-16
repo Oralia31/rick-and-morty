@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { CharacterContext } from "../../Context/CharactersContext";
 import { useLocation } from "react-router-dom";
-import { MainContainer } from "./Styles";
+import { MainContainer, WrapperConatiner } from "./Styles";
 import Card from "../../components/Card/Card";
 import NotFound from "../NotFound/NotFound";
+import ButtonBack from "../../components/ButtonBack/ButtonBack";
 
 const SearchCharacter = () => {
   const location = useLocation();
@@ -14,7 +15,8 @@ const SearchCharacter = () => {
   );
 
   return (
-    <>
+    <WrapperConatiner>
+    <ButtonBack/>
       {filterCharacter.length > 0 ? (
         <MainContainer>
           {filterCharacter.map((item) => (
@@ -24,7 +26,7 @@ const SearchCharacter = () => {
       ) : (
         <NotFound />
       )}
-    </>
+    </WrapperConatiner>
   );
 };
 
