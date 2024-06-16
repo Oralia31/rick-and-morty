@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://oralia31.github.io/Oralia31.github.io",
+  "homepage": "https://oralia31.github.io/rick-and-morty",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
