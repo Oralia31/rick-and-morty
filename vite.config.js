@@ -7,5 +7,5 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [react()],
-  base: "/rick-and-morty",
+  base: "https://oralia31.github.io/rick-and-morty",
 });
