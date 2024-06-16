@@ -9,7 +9,7 @@ export const LinkContent = styled(Link)`
 export const CardContent = styled(Card)`
   &.MuiPaper-root {
     width: 15rem;
-    height: 19rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,12 +32,11 @@ export const CardContent = styled(Card)`
       //transform: scale(0.8);
       object-fit: fill;
       border: 0.1rem solid ${(props) => props.theme.colors.greyLight};
-      //border-radius: 1rem;
     }
   }
 `;
 
-export const Status = styled.h3`
+export const Status = styled.h4`
   font-family: ${(props) => props.theme.cards.font}, sans-serif;
   display: flex;
   justify-content: center;
@@ -51,9 +50,9 @@ export const Status = styled.h3`
     height: 0.7rem;
     border-radius: 50%;
     background-color: ${(props) =>
-      props.isAlive === "Alive"
+      props.isalive === "Alive"
         ? "#35d12d"
-        : props.isAlive === "Dead"
+        : props.isalive === "Dead"
         ? "#d02626"
         : "#77787a"};
   }
@@ -68,9 +67,9 @@ export const CardInformation = styled.div`
   padding: 0 0.6rem;
   row-gap: 0.3rem;
 
-  & h4,
-  h5 {
+  & h3 {
     font-size: 1rem;
     font-family: ${(props) => props.theme.cards.font}, sans-serif;
   }
 `;
+

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { CharacterContext } from "../../Context/CharactersContext";
 import { useLocation } from "react-router-dom";
 import { MainContainer, WrapperConatiner } from "./Styles";
@@ -8,18 +8,22 @@ import ButtonBack from "../../components/ButtonBack/ButtonBack";
 
 const SearchCharacter = () => {
   const location = useLocation();
-  const { characters } = useContext(CharacterContext);
+  const { charactersByName, getCharactersByName } = useContext(CharacterContext);
 
-  const filterCharacter = characters.filter((character) =>
-    character.name.toUpperCase().includes(location.state.toUpperCase())
-  );
+  const fetchAllCharacterByName = async (name) => {
+    await getCharactersByName(name);
+  };
+
+  useEffect(() => {
+    fetchAllCharacterByName (location.state);
+  }, [location.state]);
 
   return (
     <WrapperConatiner>
-    <ButtonBack/>
-      {filterCharacter.length > 0 ? (
+      <ButtonBack />
+      {charactersByName.length > 0 ? (
         <MainContainer>
-          {filterCharacter.map((item) => (
+          {charactersByName.map((item) => (
             <Card key={item.id} character={item} />
           ))}
         </MainContainer>

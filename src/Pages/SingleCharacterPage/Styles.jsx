@@ -9,7 +9,7 @@ export const MainContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 5rem 8rem;
+  padding: 2rem 8rem;
   row-gap: 2rem;
 
   & h2 {
@@ -80,7 +80,7 @@ export const SubtitleStatus = styled.h5`
     background-color: ${(props) =>
       props.isalive === "Alive"
         ? "#35d12d"
-        : props.isAlive === "Dead"
+        : props.isalive === "Dead"
         ? "#d02626"
         : "#77787a"};
   }

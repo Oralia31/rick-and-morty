@@ -1,7 +1,12 @@
 import React, { useState, useContext } from "react";
 import { MainContainer } from "./Styles";
 import { useNavigate } from "react-router-dom";
-import { FormControlLabel, FormControl, FormGroup, Checkbox } from "@mui/material";
+import {
+  FormControlLabel,
+  FormControl,
+  FormGroup,
+  Checkbox,
+} from "@mui/material";
 
 const CheckboxGroup = () => {
   const [selected, setSelected] = useState("");

@@ -8,7 +8,7 @@ export const WrapperConatiner = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 5rem 8rem;
+  padding: 2rem 8rem;
   row-gap: 2rem;
 
   @media (max-width: 1279px) {
@@ -23,7 +23,6 @@ export const MainContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  padding: 4rem 8rem;
   column-gap: 2rem;
   row-gap: 1rem;
 
